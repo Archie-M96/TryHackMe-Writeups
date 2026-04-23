@@ -40,8 +40,8 @@ Used command-line utilities to parse through log files and extract specific, rel
 Learned how to chain commands and manipulate file outputs directly from the command line, bypassing the need for text editors.
 * &: Runs a command in the background, freeing up the terminal.
 * &&: Chains two commands together; the second runs only if the first succeeds.
-* >: Redirects output to a file, **overwriting** existing contents (e.g., "echo password123 > passwords").
-* >>: Redirects output to a file, **appending** to existing contents without deleting data (e.g., "echo tryhackme >> passwords").
+* '>': Redirects output to a file, **overwriting** existing contents (e.g., "echo password123 > passwords").
+* '>>': Redirects output to a file, **appending** to existing contents without deleting data (e.g., "echo tryhackme >> passwords").
 
 ## 💡 The "Aha!" Moment
 Realizing the distinction between > and >> was a major highlight. Understanding that >> appends data makes it clear how attackers might silently add malicious SSH keys to a server's authorized keys file without disrupting the existing legitimate keys. 
